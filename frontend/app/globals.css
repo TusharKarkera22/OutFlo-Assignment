@@ -1,0 +1,80 @@
+/* frontend/app/globals.css */
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(135deg, #f7fafc 0%, #e3e6f3 40%, #e9e4fc 100%);
+  --foreground: #23232b;
+  --body-text: #444;
+  --card-bg: #fff;
+  --card-gradient: linear-gradient(120deg, #fff 80%, #f3f0fa 100%);
+  --sidebar-bg: linear-gradient(135deg, #23232b 0%, #18181b 100%);
+  --accent: #ffd700;
+  --primary: #6c63ff;
+  --shadow: 0 8px 32px 0 rgba(44, 44, 84, 0.12);
+  --border-radius: 18px;
+  --font-sans: 'Geist', 'Inter', 'Segoe UI', Arial, sans-serif;
+  --input-bg: #fff;
+  --input-border: #e5e7eb;
+  --input-text: #23232b;
+  --label-text: #23232b;
+  --muted-text: #888;
+}
+
+body {
+  background: var(--background);
+  color: var(--body-text);
+  font-family: var(--font-sans);
+}
+
+.app-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--background);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.app-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(108,99,255,0.07) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
+.card {
+  background: var(--card-gradient);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  color: #fff;
+}
+
+input, textarea {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+input:focus, textarea:focus {
+  border: 1.5px solid var(--primary);
+  outline: none;
+}
+label {
+  color: var(--label-text);
+  font-weight: 500;
+}
+button {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}

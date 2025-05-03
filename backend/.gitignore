@@ -1,0 +1,59 @@
+# Dependencies
+/node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled output
+/dist
+/build
+/out
+*.js.map
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE and editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+/coverage
+/.nyc_output
+
+# Production
+/build
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: ignore compiled JavaScript if you're committing only TypeScript
+# Uncomment if you don't want to commit compiled JS
+# /src/**/*.js
